@@ -84,7 +84,7 @@ public class funkcijos {
 //    5, 6, 7 uzduotys
 
 
-//    public static void main(String[] args) {
+    //    public static void main(String[] args) {
 //
 //
 //        int[] masyvas3 = rndArr();
@@ -129,10 +129,100 @@ public class funkcijos {
 //    }
 //
 //}
-
+////////////// 8
     public static void main(String[] args) {
-
-
+      drawSquare();
+    };
+      public static void drawSquare(){
+        for (int i = 1; i <= 5; i++) {
+            for (int b = 1; b <= 5; b++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
 
 
     }
+//////////////////// 9
+    public static void main(String[] args) {
+        String test = "Siandien labai grazi diena";
+        count(test);
+
+    }
+
+
+    public static void count(String x) {
+        char[] ch = x.toCharArray();
+        int letter = 0;
+        int space = 0;
+        for (int i = 0; i < x.length(); i++) {
+            if (Character.isLetter(ch[i])) {
+                letter++;
+            } else if (Character.isSpaceChar(ch[i])) {
+                space++;
+            }
+        }
+            System.out.println();
+            System.out.println("letter: " + letter);
+            System.out.println("space: " + space);
+        }
+    }
+////////////// 10
+public static void main (String a[]) {
+String word = "Povilas";
+    System.out.println(reverse(word));
+
+
+}
+public static String reverse (String a){
+    int j = a.length();
+    char[] newWord= new char[j];
+
+
+    for (int i = 0; i < a.length() ; i++) {
+        newWord[--j] = a.charAt(i);
+    }
+    return new String (newWord);
+}
+}
+/////// 1 sunk
+
+    public static void main(String[] args) {
+        System.out.print("---");
+        sayHi();
+        System.out.print("---");
+
+    }
+
+    public static void sayHi() {
+        System.out.print("labas rytas =)");
+    }
+}
+
+///// 1 sunk
+
+    public static void main(String[] args) {
+        withLines("labas");
+    }
+
+    public static void withLines(String text) {
+        System.out.print("---" + text + "---");
+    }
+///// 2 sunk
+    public static void random() {
+        String text = "";
+        String alpha_numeric = "0123456789" + "abcdefghijklmnopqrstuvxyz";
+        for (int i = 0; i < 10; i++) {
+           nuo 0 iki alpha numeric length -1
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
